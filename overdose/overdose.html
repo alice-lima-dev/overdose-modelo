@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="Pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
+
     <title>Overdose</title>
 </head>
+
 <body>
     <nav>
 
         <div class="logo">
-            <img class= "logo2"src="Captura_de_tela_2023-05-22_221041-removebg-preview.png">
+            <img class="logo2" src="Captura_de_tela_2023-05-22_221041-removebg-preview.png">
         </div>
 
         <ul>
             <li> <a href="#"> Página inicial </a> </li>
             <li> <a href="#"> Serviços </a> </li>
         </ul>
- 
-    </nav>
-     <img class="banner" src="banner.png">
-     <a href="https://www.koloniskateshop.com/roupas/calcas/koloni/calca-cargo-koloni-off-white" id="texto">Conheça nossos produtos</a>
 
-     <div class="roupa">
+    </nav>
+    <img class="banner" src="banner.png">
+    <a href="https://www.koloniskateshop.com/roupas/calcas/koloni/calca-cargo-koloni-off-white" class="texto">Conheça
+        nossos produtos</a>
+
+    <div class="roupa">
         <img class="roupas1" src="calca-cargofem.png" alt="Calça cargo">
-        <img class="roupas"src="camisa-masculina.png" alt="Camisa masculina">
-     </div>
-     <table>
-       <tr>
-            <td>Escolha sua roupa</td>
-            <td><button onclick="adicionarItem()"> + </button>Quantidade</td>
-            <td>Excluir itens</td>
+        <img class="roupas" src="camisa-masculina.png" alt="Camisa masculina">
+    </div>
+    <table>
+        <tr>
+            <th>Escolha sua roupa</th>
+            <th><button onclick="adicionarItem()"> + </button>Quantidade</th>
+            <th>Excluir itens</th>
         </tr>
-         <tr>
-        <td>
-            <select name="select">
-                    <option value="Calça-cargo">Calça calgo </option>
-                    <option value="Camisa" selected>Camisa tamanho M</option>
-            </select>
-        </td>
-        <td>
-            <td id="quantidade">1</td>
-        </td>
-    
-        <td>
-            <img class="lixeira" src="image-removebg-preview.png" onclick="removerProduto()">
-        </td>
-    
-    </tr>
-     </table>
+        <tbody>
+            <tr>
+                <td>
+                    <select name="select">
+                        <option value="Calça-cargo">Calça calgo </option>
+                        <option value="Camisa" selected>Camisa tamanho M</option>
+                    </select>
+                </td>
+                <td id="id-qtd-itens">1</td>
+                <td>
+                    <!-- <button onclick="removerProduto()"> <img src="image-removebg-preview.png" alt=""></button> -->
+                    <img class="lixeira" src="image-removebg-preview.png" onclick="removerProduto()">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <li>
+            <ul>
+                <img class="logo2" src="Captura_de_tela_2023-05-22_221041-removebg-preview.png" alt="logo">
+            </ul>
+            <p class="footer">Mais informações entre em contato</p>
+            <p class="footer">Ou pelo nosso email (overdose.moda@gmail.com)</p>
+        </li>
+    </footer>
 </body>
+
 </html>

@@ -1,9 +1,10 @@
-var contador = 0
-var quantidade = document.getElementById("quantidade")
+var contador = 0;
+var quantidade = document.getElementById("id-qtd-itens");
 
 function adicionarItem(){
+    console.log("teste");
     contador++
-    quantidade.innerHTML = '<td>${quantidade}</td>'
+    quantidade.innerHTML = `<td>${contador}</td>`
 }
 function removerProduto(){
     
